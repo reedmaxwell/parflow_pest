@@ -1,0 +1,28 @@
+pcf
+* control data
+norestart  estimation
+    2    5     1     0     1
+    1    1  single  point   
+  5.0   2.0   0.3  0.03    10
+  3.0   3.0 0.001
+  0.1
+   30  0.01     3     3  0.01     3
+    1     1     1
+* parameter groups
+subs           relative 0.001  1.0  switch  2.0 parabolic
+* parameter data
+k1           none factor     0.10000      0.001   1.00     subs             1.0000        0.0000      1
+k2           none factor     0.50000      0.001   1.0      subs             1.0000        0.0000      1
+* observation groups
+obsgroup
+* observation data
+p1            3.872059e+01   1.0  obsgroup
+p2            4.666176e+01   1.0  obsgroup
+p3            3.313235e+01   1.0  obsgroup
+p4            2.872059e+01   1.0  obsgroup
+p5            3.637714e+01   1.0  obsgroup
+* model command line
+/Users/reed/Projects/parflow_pest/runpfdocker.scr
+* model input/output
+in.tpl    input.txt 
+obs.pif   Press.txt

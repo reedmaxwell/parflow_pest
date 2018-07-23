@@ -1,0 +1,8 @@
+you can run this example locally using
+tclsh 2layer.tcl
+
+you can run it with Docker using 
+docker run -t -v /Users/reed/Projects/parflow_pest:/pesttest
+reedmaxwell/parflow:v.9 /usr/bin/bash -c "cd /pesttest/  && tclsh
+2layer.tcl"
+
